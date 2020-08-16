@@ -20,7 +20,7 @@ const Chat = ({ location }) => {
         setRoom(room);
         console.log(socket);
 
-    })
+    }, [ENDPOINT, location.search]); // to avoid data repetition, need to place an array as the scond param in the useEffect so only when the vlaues change we will re-render
     return (
         <div>
            Chat 
