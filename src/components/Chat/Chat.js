@@ -3,12 +3,16 @@ import queryString from 'query-string'; // this will help with retireving data f
 import io from 'socket.io-client';
 import './Chat.css';
 import InfoBar from '../InfoBar/InfoBar';
+import Input from '../Input/Input';
+import Messages from '../Messages/Messages';
+import TextContainer from '../TextContainer/TextContainer';
 
 let socket;
 
 const Chat = ({ location }) => {
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
+    const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const ENDPOINT = 'localhost:5000';
@@ -35,11 +39,16 @@ const Chat = ({ location }) => {
     }, [ENDPOINT, location.search]); // to avoid data repetition, need to place an array as the scond param in the useEffect so only when the vlaues change we will re-render
 
     useEffect(() => {
-        socket.on('message' , (message) => {
-            setMessages([...messages, message])
+        socket.on('message', message => {
+            setMessages(messages => [ ...messages, message ]);
             // since we can't mutate state, used the spead operator
-        })
-    }, [messages]);
+        });
+    
+
+        socket.on("roomData", ({ users }) => {
+            setUsers(users);
+          });
+      }, []);
 
     // function for sending messages 
     const sendMessage = (event) => {
@@ -53,11 +62,13 @@ const Chat = ({ location }) => {
 
     return (
         <div className="outerContainer">
-            <div className="container" >
-                <InfoBar room={room}/>
-                {/* <input value={message} onChange={(event) => setMessage(event.target.value)} onKeyPress={event => event.key === 'Enter' ? sendMessage() : null} /> */}
+            <div className="container">
+                <InfoBar room={room} />
+                <Messages messages={messages} name={name} />
+                <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
             </div>
-        </div>
+        <TextContainer users={users}/>
+    </div>
     )
 }
 
