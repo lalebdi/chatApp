@@ -19,7 +19,15 @@ const Chat = ({ location }) => {
         setName(name);
         setRoom(room);
         // console.log(socket);
-        socket.emit('join', { name, room});
+        // we're getting the callback function from the /server/index
+        socket.emit('join', { name, room}, () => {
+            
+        });
+            // below is for unmouting
+        return () => {
+            socket.emit('disconnect');
+            socket.off();
+        }
     }, [ENDPOINT, location.search]); // to avoid data repetition, need to place an array as the scond param in the useEffect so only when the vlaues change we will re-render
     return (
         <div>
