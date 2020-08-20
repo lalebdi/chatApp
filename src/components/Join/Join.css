@@ -18,7 +18,10 @@ html, body {
     text-align: center;
     height: 100vh;
     align-items: center;
-    background-color: #1A1A1D;
+    /* background-color: #1A1A1D; */
+    background-image: url('./WhatsChat.png');
+		background-size: cover;
+    	background-repeat: no-repeat;
   }
   
   .joinInnerContainer {
@@ -42,7 +45,8 @@ html, body {
       color: #fff !important;
       text-transform: uppercase;
       text-decoration: none;
-      background: #2979FF;
+      /* background: #2979FF; */
+      background: #36D45E;
       padding: 20px;
       border-radius: 5px;
       display: inline-block;
