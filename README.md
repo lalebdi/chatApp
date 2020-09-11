@@ -34,8 +34,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![WhatsChat][product-screenshot]](![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
-)
+[![WhatsChat][product-screenshot]](https://example.com)
+![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
+
 
 This is my version of a whatsapp clone. The app is live in this link: https://5f529d2bfd13113312e00abd--friendly-borg-6726ab.netlify.app
 
