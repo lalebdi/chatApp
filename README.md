@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
-<br />
 ![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
 
+<br />
 <p align="center">
     
   
