@@ -1,9 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+    ![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
+
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  
 
   <h3 align="center">Fullstack Live Chat App</h3>
 
@@ -33,7 +34,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![WhatsChat][product-screenshot]](![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
+)
 
 This is my version of a whatsapp clone. The app is live in this link: https://5f529d2bfd13113312e00abd--friendly-borg-6726ab.netlify.app
 
