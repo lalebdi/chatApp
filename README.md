@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-    ![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
+![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
 
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+<p align="center">
+    
   
 
   <h3 align="center">Fullstack Live Chat App</h3>
@@ -34,7 +34,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![WhatsChat][product-screenshot]](https://example.com)
+
 ![WhatsChat](https://user-images.githubusercontent.com/67381036/92832685-f68fe400-f3a5-11ea-8b34-42ad5743e299.gif)
 
 
